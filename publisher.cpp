@@ -71,7 +71,7 @@ int main(int argc, char* argv[]) {
             auto res = send_multipart(pub, msgs);
 
             // sleep for a short duration to avoid flooding
-            this_thread::sleep_for(chrono::microseconds(1000));
+            this_thread::sleep_for(chrono::microseconds(10000));
 
             // Simple progress indicator
             if ((i + 1) % 1000 == 0) {
